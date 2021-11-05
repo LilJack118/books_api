@@ -6,7 +6,7 @@ class BookSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField(max_length=400)
     authors = serializers.ListField(required = False, allow_null = True)
-    publishedDate = serializers.CharField(max_length=10, required = False, allow_null = True)
+    publishedDate = serializers.CharField(max_length=100, required = False, allow_null = True)
     categories = serializers.ListField(required = False, allow_null = True)
     average_rating = serializers.FloatField(required = False, allow_null = True)
     ratings_count = serializers.FloatField(required = False, allow_null = True)

@@ -27,7 +27,7 @@ SECRET_KEY = '%#&2nk2dlfi3y_mz@!zaeyvs(2ft3tzw&g#m501m0eoklsg7ml'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://bookssapi.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -90,6 +90,8 @@ DATABASES = {
 }
 
 
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -125,6 +127,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+# django_heroku.settings(locals())
+
+STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
 
