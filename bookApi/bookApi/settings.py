@@ -25,7 +25,7 @@ SECRET_KEY = '%#&2nk2dlfi3y_mz@!zaeyvs(2ft3tzw&g#m501m0eoklsg7ml'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://bookssapi.herokuapp.com/']
 
 
 # Application definition
@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'bookApi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'books_db',
-        'USER': 'postgres',
-        'PASSWORD': 'J@kub2002',
-        'HOST': 'localhost',
+        'NAME': 'd8ncpsgpne0688',
+        'USER': 'awmvjzfqzswipy',
+        'PASSWORD': '7b11755cf5d0e2ca76284c7f9413e1e44da6f26ab378ac772c170b96c77ff0fd',
+        'HOST': 'ec2-176-34-168-83.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
